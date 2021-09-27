@@ -1,0 +1,6 @@
+first_name = input()
+middle_name = input()
+last_name = input()
+print("Количество букв в отчестве:", len(first_name.split(' ')))
+print("Количество букв в фамилии:", len(middle_name.split(' ')))
+print("Общее количество букв в ФИО:", len(str(last_name(' '))))
