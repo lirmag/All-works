@@ -1,2 +1,4 @@
-contours, hierarchy = cv2.findContours(thresh, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE) # fails with error "not enough values to unpack (expected 3, got 2)"
-contours, hierarchy = cv2.findContours(thresh, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+a = list((input().split())
+for i in a:
+    if type(i) is str:
+        type(i) == int
