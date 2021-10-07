@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import random
 
 items = [("PS4 игра Sony Человек-паук", 1349), ("PS4 игра Sony God of War", 1999),
@@ -67,3 +68,9 @@ print('Общая сумма:', total_cost)
 # my_shop_list.append(random.choice(items))
 #     while my_shop_list[2] == my_shop_list[1] or my_shop_list[2] == my_shop_list[0]:
 #         my_shop_list[2] = random.choice(items)
+=======
+a = list((input().split())
+for i in a:
+    if type(i) is str:
+        type(i) == int
+>>>>>>> a6bd5057dc92ef7139ad1c222ec428beb2eeccd0
