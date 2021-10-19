@@ -28,9 +28,12 @@ third = 'номер третьей выбранной игры (индекс)'
 
 import random
 
-def func_2(arg):
-    arg = list(my_shop_list[0])
-    arg.pop(1)
+
+# def func_2(arg):
+#     arg = list(my_shop_list[0])
+#     arg.pop(1)
+
+
 def func_1():
     while my_shop_list[2] == my_shop_list[1] or my_shop_list[2] == my_shop_list[0]:
         my_shop_list[2] = random.choice(items)
@@ -68,6 +71,6 @@ my_shop_list.append(*c)
 print('Список покупок:', (', '.join(map(str, my_shop_list))))
 print('номер первой выбранной игры (индекс):', first)
 print('номер второй выбранной игры (индекс):', second)
-print('номер третьей выбранной игры (индекс):', total_cost)
+print('Номер третьей выбранной игры (индекс):', third)
+print('Общая стоимость:', total_cost)
 # print('Оставшийся баланс:', balance)
-
