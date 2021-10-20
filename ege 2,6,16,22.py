@@ -1,3 +1,4 @@
+
 # Zadanie 2:
 k = (True,False)
 print('x y z w F')
