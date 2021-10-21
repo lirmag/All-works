@@ -80,12 +80,11 @@ print(max(k))
 n = 250
 number = 3
 c = (str(number)) * n
-print(c)
-while ('3333' in c) or ('7777' in c):
+while '3333' in c or '7777' in c:
     if '3333' in c:
-        c = c.replace('3333', '3333,7')
+        c = c.replace('3333', '7', 1)
     else:
-        c = c.replace('7777', '777,3')
+        c = c.replace('777', '3', 1)
 print(c)
 
 # Zadanie 10:
@@ -95,7 +94,7 @@ while c > 0:
     newNum = str(c % 8) + newNum
     c //= 8
 print(newNum)
-Otvet: 17
+# Otvet: 17
 
 # Zadanie 11:
 def f(A, x):
@@ -111,10 +110,19 @@ while True:
         else:
             print(A)
     A += 1
-Otvet: 34
+# Otvet: 34
 
 # Zadanie 12:
-# hz
+k = 0
+sum_1 = 0
+list_1 = []
+with open('12.txt') as file:
+    list = list(map(int, file.read().split()))
+    for i in range(len(list)):
+        if list[i] % 5 == 0 or list[i - 1] % 5 == 0:
+            list_1.append(list[i] + list[i - 1])
+            k += 1
+    print(str(k) + ',' + str(min(list_1)))
 
 # Zadanie 13:
 k = []
