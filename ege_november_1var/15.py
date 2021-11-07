@@ -1,0 +1,1 @@
+# otrezki ne reshautsa na pitone
