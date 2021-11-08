@@ -14,20 +14,26 @@
     
 """
 
+
 # Ваш код ниже
 def get_number_from_string(string):
-    numbers = ['1','2','3','4','5','6','7','8','9','0']
+    numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
     answer = ''
     for letter in string:
         if letter in numbers:
             answer += letter
-        else: continue
+        else:
+            continue
     if answer == '':
         return 0
     return int(answer)
+
+
 def count_all_numbers_in_two_list(str_1, str_2):
     answer = 0
     answer += (get_number_from_string(str_1) + get_number_from_string(str_2))
     print(answer)
+
+
 count_all_numbers_in_two_list("2019 год 1 сентября", "20 лет назад 1 человек...")
 count_all_numbers_in_two_list("Где-то", "Там")

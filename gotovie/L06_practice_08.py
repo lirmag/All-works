@@ -4,7 +4,9 @@
 """
 
 # Ваш код ниже
-list_1 = ['dog','cat','bee','fish','mouse']
+list_1 = ['dog', 'cat', 'bee', 'fish', 'mouse']
+
+
 def count_word_len(sp):
     d = dict()
     for element in sp:
@@ -13,4 +15,6 @@ def count_word_len(sp):
         else:
             continue
     return d
+
+
 print(count_word_len(list_1))

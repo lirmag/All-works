@@ -7,14 +7,21 @@
 4. Вызовите функцию square_number() три раза.
 """
 
+
 # Ваш код ниже
 def glad_to_see(name):
     return 'Рады Вас видеть, ' + name + '!'
+
+
 print(glad_to_see('Лиза'))
 print(glad_to_see('Олег'))
 print(glad_to_see('Максим'))
+
+
 def square_number(number):
-    return number**2
+    return number ** 2
+
+
 print(square_number(2))
 print(square_number(4))
 print(square_number(8))

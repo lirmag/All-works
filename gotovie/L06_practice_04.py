@@ -11,11 +11,19 @@ hello_by_daytime - приветствие, в соответствии со вр
 5. Создайте функцию sum_two_number(), которая принимает в качестве аргумента любые два числа. По умолчанию одно из чисел = 10. Функция должна выводить на экран сумму чисел a и b.
 6. Вызовите функцию sum_two_number(), передав лишь один аргумент
 """
+
+
 # Ваш код ниже
-def hello_people(lastname,firstname,hello_by_daytime='Добрый день'):
-    print(hello_by_daytime+ ', ' + lastname + ' ' +  firstname + '!')
-hello_people('Исаев','Лев')
-hello_people('Исаев','Лев','Доброе утро')
-def sum_two_number(a,b=10):
+def hello_people(lastname, firstname, hello_by_daytime='Добрый день'):
+    print(hello_by_daytime + ', ' + lastname + ' ' + firstname + '!')
+
+
+hello_people('Исаев', 'Лев')
+hello_people('Исаев', 'Лев', 'Доброе утро')
+
+
+def sum_two_number(a, b=10):
     print(a + b)
+
+
 sum_two_number(2)

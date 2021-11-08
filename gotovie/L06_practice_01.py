@@ -4,7 +4,10 @@
 2. Вызовите функцию glad_to_see
 """
 
+
 # Ваш код ниже
 def glad_to_see():
     return 'Рады Вас видеть!'
+
+
 print(glad_to_see())

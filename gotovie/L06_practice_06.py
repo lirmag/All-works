@@ -6,10 +6,13 @@
 3. Вызовите функцию format_time() три раза, использовав разный разделитель.
 """
 
+
 # Ваш код ниже
-def format_time(h,min,sec,sep=':'):
+def format_time(h, min, sec, sep=':'):
     print(str(h) + sep + str(min) + sep + str(sec))
-format_time(12,31,2)
-format_time(12,31,2,'.')
-format_time(12,31,2,';')
-format_time(12,31,2,'!')
+
+
+format_time(12, 31, 2)
+format_time(12, 31, 2, '.')
+format_time(12, 31, 2, ';')
+format_time(12, 31, 2, '!')

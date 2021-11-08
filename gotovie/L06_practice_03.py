@@ -8,12 +8,19 @@
 4. Создайте функцию sum_two_number, которая принимает в качестве аргумента любые два числа и выводит на экран сумму этих чисел
 """
 
+
 # Ваш код ниже
-def gift_to_people(name,gift):
+def gift_to_people(name, gift):
     print('Добрый день, ' + name + '!')
     print('В подарок вы получаете ' + gift + '!')
-gift_to_people('Лиза','резиновый член')
-gift_to_people('Илья','карандаш')
-def sum_two_number(number_1,number_2):
+
+
+gift_to_people('Лиза', 'резиновый член')
+gift_to_people('Илья', 'свою мёртвую мать')
+
+
+def sum_two_number(number_1, number_2):
     print(number_2 + number_1)
-sum_two_number(2,10)
+
+
+sum_two_number(2, 10)
