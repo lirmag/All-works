@@ -1,8 +1,5 @@
 def f(n,m):
-    if n % m == 0:
-        return 1
-    else:
-        return 0
+    return n % m
 for A in range(1,1001):
     flag = True
     for x in range(1,1001):
