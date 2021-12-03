@@ -31,5 +31,5 @@ for ind in range(0, 7):
         break
     else:
         k += 1
-if k > 1 and flag == True:
+if k > 1 and flag is True:
     print('Yes')
