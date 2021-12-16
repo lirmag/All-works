@@ -9,7 +9,9 @@ for x in range(1,length + 1):
     count += 1
     s_count += 1
     num = input()
-    if int(num) < minimum:
+    if minimum == 0:
+        minimum = int(num)
+    if int(num) <= minimum:
         minimum = int(num)
         ans = count
     if int(num) > maximum:
