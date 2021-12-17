@@ -1,11 +1,11 @@
 length = int(input())
-maximum = 0
-s_maximum = 0
+mix = 0
+s_mix = 0
 string = ''
 for x in range(1,length + 1):
     num = input()
-    if int(num) > maximum:
-        s_maximum, maximum = maximum, int(num)
-    elif int(num) > s_maximum:
-        s_maximum = int(num)
-print(s_maximum)
+    if int(num) > mix:
+        s_mix, mix = mix, int(num)
+    elif int(num) > s_mix:
+        s_mix = int(num)
+print(s_mix)
