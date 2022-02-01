@@ -68,6 +68,6 @@ check = {
 
 for key in check:
     if check[key] == coding(key):
-        print(True)
+        print(True,' key:' + key, '| result:' + coding(key))
     else:
         print(False, key)
