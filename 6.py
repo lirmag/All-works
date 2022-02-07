@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+import telebot
 sequence = []
 sequence_2 = []
 print('Напишите количество чисел в последовательности:')
