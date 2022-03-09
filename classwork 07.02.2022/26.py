@@ -28,4 +28,4 @@ for index in range(0,len(number) - 1):
         if number[index] == number[ind]:
             if (max(count[index],count[ind]) - min(count[index],count[ind])) == 2:
                 ans.append(str(number[index]) + ' ' + str(max(count[index],count[ind]) - min(count[index],count[ind])))
-for elem in ans
+
