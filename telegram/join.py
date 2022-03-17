@@ -1,5 +1,4 @@
 import telebot
-import datetime
 import sqlite3
 import schedule
 import config
