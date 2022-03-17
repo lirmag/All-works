@@ -16,8 +16,9 @@ for index in range(0, len(c) - 1):
         for ind in range(0, len(l)):
             if c[index + 1] in l[ind]:
                 l[ind][1] += 1
+                flag = False
                 break
-            else:
-                l.append((c[index + 1], 1))
-                break
+        if flag is False:
+            l.append((c[index + 1], 1))
+            break
 print(l)
