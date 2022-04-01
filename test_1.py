@@ -1,40 +1,19 @@
-import datetime
-from datetime import datetime
+def between_markers(text: str, begin: str, end: str) -> str:
+    for ind in range(0,len(text)):
+        if text[ind] == begin[-1]:
+            start = ind + 1
+        if text[ind] == end[0]:
+            finish = ind
+    if (begin in text) and (end in text):
+        return text[start:finish]
+    if (begin not in text) and (end in text):
+        return text[0:finish]
+    if (begin in text) and (end not in text):
+        return text[start::]
+    if (begin not in text) and (end not in text):
+        return text
 
-lessons_start = {8: 45,
-                 9: 35,
-                 10: 35,
-                 11: 25,
-                 12: 15,
-                 13: 15,
-                 14: 5}
-lessons_end = {9: 25,
-               10: 15,
-               11: 15,
-               '12':'5',
-               12: 55,
-               13: 55,
-               14: 45}
-a = datetime.now()
-now = a.replace(hour=9,minute=45,second=0,microsecond=0)
-for el in lessons_start:
-    flag = True
-    for elem in lessons_end:
-        les_s = now.replace(hour=el, minute=int(lessons_start.get(el)),second=0,microsecond=0)
-        les_d = now.replace(hour=int(elem), minute=int(lessons_end.get(elem)),second=0,microsecond=0)
-        if les_s < now and les_d > now:
-            print('Урок уже идёт!')
-            flag = False
-        if les_d < now and les_s > now:
-            print('До начала урока осталось:' + str(les_s - now)[2:4])
-            flag = False
-        else:
-            break
-        if flag == False:
-            break
-    if flag == False:
-        break
-# for el in now:
-#     if el == ':':
-#         now = now.replace(':','.')
-#         now = float(now)
+
+# print(between_markers('What is >apple<', '>', '<'))
+print(between_markers("<head><title>My new site</title></head>",
+                           "<title>", "</title>"))
