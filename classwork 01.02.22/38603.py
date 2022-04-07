@@ -15,9 +15,9 @@ def dig(number):
 
 
 count = 0
-for number in range(700000, 10000000000):
+for num in range(700000, 10000000000):
     if count == 5:
         break
-    if dig(number) % 10 == 8:
+    if dig(num) % 10 == 8:
         count += 1
-        print(number, dig(number))
+        print(num, dig(num))
