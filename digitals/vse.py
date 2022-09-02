@@ -11,7 +11,7 @@ def dig(number):
             k.append(number // i)
         i += 1
         if i ** 2 == number:
-            k.append(number)
+            k.append(i)
     return sorted(k)
 
 
